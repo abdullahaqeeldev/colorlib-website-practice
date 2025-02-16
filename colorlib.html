@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap"
+        rel="stylesheet">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", serif;
+        }
+
+        
+
+        .navbar {
+            position: fixed;
+            left: 0;
+            right: 0;
+            width: 100%;
+            height: 80px;
+            background-color: rgb(46, 46, 46);
+            display: flex;
+            justify-content: space-between;
+            z-index: 1;
+        }
+
+        .logo img {
+            height: 50px;
+            width: 170px;
+            margin-top: 20px;
+            margin-left: 20px;
+
+
+        }
+
+
+
+        .icons ul {
+            display: flex;
+            list-style: none;
+
+
+            justify-content: space-between;
+
+
+
+        }
+
+
+
+        .icons ul li a i {
+            color: white;
+            font-size: 30px;
+            padding-top: 30px;
+            display: block;
+            padding-left: 20px;
+            width: 70px;
+            height: 80px;
+
+
+
+
+
+        }
+
+        .icons ul li a {
+            text-decoration: none;
+        }
+
+        .icons ul li a i:hover {
+            background-color: rgb(228, 228, 228);
+
+
+
+
+
+
+        }
+
+        .first i {
+            background-color: rgb(120, 211, 2);
+
+        }
+
+        .nav2 {
+            width: 300px;
+            height: 100vh;
+
+            background-color: rgb(196, 196, 196);
+
+        }
+
+        .nav2 {
+            text-align: center;
+        }
+
+        .nav2 img {
+            margin-top: 50px;
+            height: 170px;
+            width: 170px;
+            border-radius: 100px;
+        }
+
+        .nav2 h1 {
+            margin-top: 10px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: 500;
+        }
+
+        .nav2 p {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin-top: 20px;
+
+        }
+
+        .nav2 a {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: rgb(78, 78, 78);
+            text-decoration: none;
+
+
+
+
+
+
+
+
+        }
+
+        .nav2 a:hover {
+            border-bottom: 1px solid black;
+
+
+
+        }
+
+        .nav2 .icons2 {
+            margin-top: 20px;
+        }
+
+        .nav2 .icons2 ul li {
+
+            margin-top: 10px;
+        }
+
+        aside {
+            position: fixed;
+            top: 60px;
+        }
+
+        .main {
+            display: flex;
+        }
+
+        main {
+            height: 100vh;
+            width: 100%;
+            margin-left: 310px;
+        
+        }
+
+        .about {
+            background-image: url(img_bg_2.jpg.webp);
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+            height: 100vh;
+            width: 100%;
+
+
+        }
+
+        .heading {
+            font-family: "Poppins", serif;
+            display: flex;
+            flex-direction: column;
+            margin-left: 30px;
+            padding-top: 300px;
+
+
+
+
+        }
+
+        .heading h1 {
+
+            font-size: 50px;
+        }
+
+        .heading a {
+            color: gray;
+        }
+
+        .heading a:hover {
+            color: black;
+        }
+
+        .heading button {
+            width: 200px;
+            height: 30px;
+            margin-top: 10px;
+            font-size: 20px;
+            background-color: transparent;
+            border-radius: 10px;
+            border: 1px solid black;
+        }
+
+        .heading button:hover {
+            background-color: whitesmoke;
+        }
+
+        .main2 {
+            margin-top: 10px;
+        }
+
+        .cards {
+            flex-wrap: wrap;
+            margin-top: 40px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .card1 {
+            margin-top: 20px;
+            border: 1px solid rgb(0, 0, 0);
+            width: 200px;
+            height: 200px;
+            border-radius: 10px;
+            text-align: center;
+            align-content: center;
+        }
+
+        .card1 i {
+            
+            font-size: 30px;
+            color: rgb(36, 164, 250);
+
+
+        }
+
+        .card2 {
+            margin-top: 20px;
+            border: 1px solid rgb(0, 0, 0);
+            width: 200px;
+            height: 200px;
+            border-radius: 10px;
+            text-align: center;
+            align-content: center;
+        }
+
+        .card2 i {
+
+            font-size: 30px;
+            color: rgb(185, 8, 255);
+
+
+        }
+
+        .card3 {
+            margin-top: 20px;
+            border: 1px solid rgb(0, 0, 0);
+            width: 200px;
+            height: 200px;
+            border-radius: 10px;
+            text-align: center;
+            align-content: center;
+        }
+
+        .card3 i {
+
+            font-size: 30px;
+            color: rgb(4, 219, 58);
+
+
+        }
+
+        .card4 {
+            margin-top: 20px;
+            border: 1px solid rgb(0, 0, 0);
+            width: 200px;
+            height: 200px;
+            border-radius: 10px;
+            text-align: center;
+            align-content: center;
+        }
+
+        .card4 i {
+
+            font-size: 30px;
+            color: rgb(255, 0, 0);
+
+
+        }
+
+        .hire {
+            background-color: rgb(255, 238, 0);
+            width: 800px;
+            height: 170px;
+
+        }
+
+        .hire h1 {
+            font-size: 30px;
+            font-weight: 500;
+            padding-left: 40px;
+            padding-top: 10px;
+        }
+
+        .hire button {
+            margin-top: 10px;
+            margin-left: 40px;
+            height: 40px;
+            width: 80px;
+            background-color: transparent;
+            border: 1px solid black;
+
+        }
+
+        .second {
+            margin-top: 50px;
+            display: flex;
+            justify-content: space-around;
+
+        }
+
+        .what h1 {
+            margin-top: 50px;
+        }
+
+        .what h3 {
+            margin-left: 20px;
+            margin-top: 20px;
+        }
+
+        .cards2 {
+
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+
+        }
+
+        .caard1 {
+            background-color: whitesmoke;
+            position: relative;
+            padding-top: 30px;
+            border-bottom: 3px solid rgb(0, 0, 0);
+            width: 200px;
+            height: 200px;
+            text-align: center;
+            margin-top: 70px;
+
+        }
+
+        .caard1 i {
+            color: rgb(255, 255, 255);
+            background-color: rgb(0, 0, 0);
+            border-radius: 100px;
+            font-size: 30px;
+            padding: 20px;
+            position: absolute;
+            top: -50px;
+            left: 65px;
+
+
+        }
+
+        .caard1 h3 {
+            margin-top: 20px;
+
+        }
+        main .nav2{
+            position: absolute;
+            top: 80px;
+            left: 1000px;
+            display: none;
+        }
+
+        @media(max-width: 768px){
+            main .nav2{
+                display: block;
+                
+                
+
+                
+            }
+            aside .nav2{
+display: none;
+            
+            }
+            main{
+                margin: 0;
+            }
+
+          
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="navbar">
+            <div class="logo"><img src="logo.png" alt=""></div>
+            <div class="icons">
+                <ul>
+                    <li><a href="#"><i class="	fas fa-desktop"></i></a></li>
+                    <li><a href="#"><i class="	fas fa-tablet-alt"></i></a></li>
+                    <li><a href="#"><i class="fas fa-mobile"></i></a></li>
+                    <li><a class="first" href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                    <li><a href="#"><i class="fa fa-close"></i></a></li>
+                    <li><a  href="#"><i class="fa fa-bars"></i></a></li>
+                </ul>
+
+            </div>
+
+        </div>
+    </nav>
+    <div class="main">
+        <aside>
+            <div class="nav2">
+
+                <img src="about.jpg (1).webp" alt="">
+                <h1>Jackson ford</h1>
+                <p><a href="#">UI/UX/Designer </a>in Philippines</p>
+                <div class="icons2">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Service</a></li>
+                        <li><a href="#">Skills</a></li>
+                        <li><a href="#">Education</a></li>
+                        <li><a href="#">Experiance</a></li>
+                        <li><a href="#">Work</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <p>© Copyright ©2025 All rights reserved | This template is made with by <a
+                                href="#">Colorlib</a>
+                            Demo <a href="#"> Unsplash.com</a></p>
+
+
+                    </ul>
+
+                </div>
+
+
+
+
+            </div>
+        </aside>
+        <main>
+            <div class="nav2">
+
+                <img src="about.jpg (1).webp" alt="">
+                <h1>Jackson ford</h1>
+                <p><a href="#">UI/UX/Designer </a>in Philippines</p>
+                <div class="icons2">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Service</a></li>
+                        <li><a href="#">Skills</a></li>
+                        <li><a href="#">Education</a></li>
+                        <li><a href="#">Experiance</a></li>
+                        <li><a href="#">Work</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <p>© Copyright ©2025 All rights reserved | This template is made with by <a
+                                href="#">Colorlib</a>
+                            Demo <a href="#"> Unsplash.com</a></p>
+
+
+                    </ul>
+
+                </div>
+
+
+
+
+            </div>
+            
+           
+            <div class="about">
+                <div class="heading">
+                    <h1>h1!<br>I am
+                        a Designer</h1>
+                    <p>100% html5 bootstrap templates Made by <br> <a href="#">colorlib.com</a>
+
+                    </p>
+                    <button>download cv</button>
+                </div>
+            </div>
+            <div class="main2">
+                <h1 style="text-align: center; background-color: rgb(219, 219, 219);">about us</h1>
+                <h1>Who Am I?</h1>
+                <p><strong>Hi I'm Jackson Ford</strong> On her way she met a copy. The copy warned the Little Blind
+                    Text, that where it came from it would have been rewritten a thousand times and everything that was
+                    left from its origin would be the word "and" and the Little Blind Text should turn around and return
+                    to its own, safe country.</p>
+                <br>
+                <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic
+                    life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the
+                    far World of Grammar.</p>
+
+
+            </div>
+            <div class="cards">
+                <div class="card1">
+                    <i class="fas fa-lightbulb"></i>
+                    <p>Graphic Design</p>
+
+                </div>
+                <div class="card2">
+                    <i class="fas fa-coins"></i>
+                    <p>Web Design</p>
+
+                </div>
+                <div class="card3">
+                    <i class="fa fa-tree"></i>
+                    <p>
+                        Software</p>
+
+                </div>
+                <div class="card4">
+                    <i class="fa fa-volume-control-phone"></i>
+                    <p>Application</p>
+
+                </div>
+
+            </div>
+            <div class="second">
+                <div class="hire">
+                    <h1>I am happy to know you <br>
+                        that 300+ projects done sucessfully!</h1>
+                    <button>Hire me</button>
+
+                </div>
+            </div>
+            <div class="what">
+                <h1 style="text-align: center; background-color: rgb(219, 219, 219);">what i do?</h1>
+                <h3>Here are some of <br> my expertise</h3>
+
+            </div>
+            <div class="cards2">
+                <div class="caard1">
+                    <i class="fas fa-lightbulb"></i>
+                    <h3>Innovative Ideas</h3>
+                    <p>Separated they live in Bookmarksgrove right at the coast of the Semantics</p>
+
+
+                </div>
+
+
+
+                <div class="caard1">
+                    <i class="fas fa-coins"></i>
+                    <h3>Innovative Ideas</h3>
+                    <p>Separated they live in Bookmarksgrove right at the coast of the Semantics</p>
+
+
+                </div>
+
+
+
+                <div class="caard1">
+                    <i class="fa fa-tree"></i>
+                    <h3>Innovative Ideas</h3>
+                    <p>Separated they live in Bookmarksgrove right at the coast of the Semantics</p>
+
+
+                </div>
+
+
+
+                <div class="caard1">
+                    <i class="fa fa-volume-control-phone"></i>
+                    <h3>Innovative Ideas</h3>
+                    <p>Separated they live in Bookmarksgrove right at the coast of the Semantics</p>
+                </div>
+
+
+
+
+
+                <div class="caard1">
+                    <i class="	fa fa-umbrella"></i>
+                    <h3>Innovative Ideas</h3>
+                    <p>Separated they live in Bookmarksgrove right at the coast of the Semantics</p>
+
+
+                </div>
+
+
+
+                <div class="caard1">
+                    <i class="fa fa-snowflake"></i>
+                    <h3>Innovative Ideas</h3>
+                    <p>Separated they live in Bookmarksgrove right at the coast of the Semantics</p>
+
+
+                </div>
+
+                <div class="caard1">
+                    <i class="fa fa-sun"></i>
+                    <h3>Innovative Ideas</h3>
+                    <p>Separated they live in Bookmarksgrove right at the coast of the Semantics</p>
+
+
+                </div>
+
+                <div class="caard1">
+                    <i class="fa fa-space-shuttle"></i>
+                    <h3>Innovative Ideas</h3>
+                    <p>Separated they live in Bookmarksgrove right at the coast of the Semantics</p>
+
+
+                </div>
+
+            </div>
+        </main>
+    </div>
+
+</body>
+
+</html>
